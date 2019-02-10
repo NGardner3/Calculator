@@ -8,7 +8,7 @@ public class Calculator {
 
     public static void main(String[] args) {
         String string1 = getInput("Enter a numeric value: ");
-        String string2 = getInput("Enter a numeric value: ");
+        String stringTwo = getInput("Enter a numeric value: ");
         String op = getInput("Choose an operation (+ - * /):");
 
         double result;
@@ -16,16 +16,16 @@ public class Calculator {
         try {
             switch (op) {
                 case "+":
-                    result = addValues(string1, string2);
+                    result = addValues(string1, stringTwo);
                     break;
                 case "-":
-                    result = subtractValues(string1, string2);
+                    result = subtractValues(string1, stringTwo);
                     break;
                 case "*":
-                    result = multiplyValues(string1, string2);
+                    result = multiplyValues(string1, stringTwo);
                     break;
                 case "/":
-                    result = divideValues(string1, string2);
+                    result = divideValues(string1, stringTwo);
                     break;
                 default:
                     System.out.println("Unrecognized operation!");
